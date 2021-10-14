@@ -1,17 +1,3 @@
-// // back tot top
-
-// let backToTopBtn = document.querySelector('.back-to-top')
-
-// window.onscroll = () => {
-//     if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-//         backToTopBtn.style.display = 'flex'
-//     } else {
-//         backToTopBtn.style.display = 'none'
-//     }
-// }
-
-// top nav menu
-
 let menuItems = document.getElementsByClassName('menu-item')
 
 Array.from(menuItems).forEach((item, index) => {
@@ -22,7 +8,7 @@ Array.from(menuItems).forEach((item, index) => {
     }
 })
 
-//  category
+
 
 let foodMenuList = document.querySelector('.food-item-wrap')
 
@@ -39,7 +25,7 @@ Array.from(categories).forEach((item, index) => {
     }
 })
 
-// on scroll animation
+
 
 let scroll = window.requestAnimationFrame || function(callback) {window.setTimeout(callback, 1000/60)}
 
@@ -70,8 +56,6 @@ loop = () => {
 }
 
 loop()
-
-// mobile nav
 
 let bottomNavItems = document.querySelectorAll('.mb-nav-item')
 
