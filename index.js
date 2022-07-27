@@ -1,3 +1,19 @@
+
+
+
+
+let menuItems = document.getElementsByClassName('menu-item')
+
+Array.from(menuItems).forEach((item, index) => {
+    item.onclick = (e) => {
+        let currMenu = document.querySelector('.menu-item.active')
+        currMenu.classList.remove('active')
+        item.classList.add('active')
+    }
+})
+
+
+
 let foodMenuList = document.querySelector('.food-item-wrap')
 
 let foodCategory = document.querySelector('.food-category')
@@ -45,6 +61,7 @@ loop = () => {
 
 loop()
 
+
 let bottomNavItems = document.querySelectorAll('.mb-nav-item')
 
 let bottomMove = document.querySelector('.mb-move-item')
@@ -58,4 +75,3 @@ bottomNavItems.forEach((item, index) => {
         bottomMove.style.left = index * 25 + '%'
     }
 })
-

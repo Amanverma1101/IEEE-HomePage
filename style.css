@@ -45,10 +45,11 @@ html {
     padding: 1rem;
 }
 
-.logo {
-    font-size: 2rem;
-    font-weight: 800;
-    color: var(--primary-color);
+.logo img{
+    padding: 0;
+    margin: 0;
+    height: 90px;
+    width: 200px;
 }
 
 .menu {
@@ -169,7 +170,8 @@ section {
 
 
 .about-slogan {
-    padding: 4rem;
+    text-align: left;
+    padding: 3rem;
     background-color: var(--white);
     border-radius: 2rem;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px;
@@ -180,8 +182,9 @@ section {
 }
 
 .about-slogan h3 {
+    text-align: center;
     font-size: 2rem;
-    margin-bottom: 3rem;
+    margin-bottom: 2rem;
     color: var(--grey);
 }
 
@@ -190,8 +193,11 @@ section {
 }
 
 .ilogo img{
-    height:20rem;
-    width: 20rem;
+    /* height:25rem;
+    width: 60rem; */
+    padding-top: 10rem;
+    width: 100%;
+    height: 90%;
 }
 
 .food-menu {
@@ -275,7 +281,7 @@ section {
 }
 
 .img-holder:hover {
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 
 .item-info {
@@ -339,10 +345,24 @@ section {
 
 .footer {
     color: var(--white);
+    color: black;
+    position: relative;
+    z-index: 1;
 }
-
+.footer::before{
+    content: "";
+    position: absolute;
+    z-index: -9;
+    height: 100%;
+    width: 100%;
+    opacity: 0.8;
+    background: url('https://images.unsplash.com/photo-1559030623-0226b1241edd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80') no-repeat center center/cover;
+    background: url('	https://amanfolio.netlify.app/static/media/contact.82aff82e0146e4853ab7.jpg') no-repeat center center/cover;
+    /* background: #4127da; */
+}
 .footer h1 {
     color: var(--primary-color);
+
 }
 
 .input-group {
